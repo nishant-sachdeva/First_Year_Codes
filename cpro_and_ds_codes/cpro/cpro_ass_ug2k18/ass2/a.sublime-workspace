@@ -1,0 +1,564 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ve",
+				"vector"
+			],
+			[
+				"v",
+				"vector"
+			],
+			[
+				"std",
+				"stdio.h\tstandard header"
+			],
+			[
+				"s",
+				"student"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"n",
+				"n"
+			],
+			[
+				"vec",
+				"vector\tstd::vector"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"c",
+				"c\tc"
+			],
+			[
+				"p",
+				"printf"
+			],
+			[
+				"q",
+				"q_garb"
+			],
+			[
+				"ne",
+				"next_nodes"
+			],
+			[
+				"new",
+				"newy"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"t",
+				"temp"
+			],
+			[
+				"de",
+				"denom"
+			],
+			[
+				"l",
+				"loop"
+			],
+			[
+				"m",
+				"mod"
+			],
+			[
+				"lo",
+				"lower_bound\tlower_bound"
+			],
+			[
+				"f",
+				"full"
+			],
+			[
+				"co",
+				"comp"
+			],
+			[
+				"pb",
+				"push_back"
+			],
+			[
+				"ma",
+				"max_2"
+			],
+			[
+				"max",
+				"max_1"
+			],
+			[
+				"te",
+				"temp1"
+			],
+			[
+				"re",
+				"register"
+			],
+			[
+				"st",
+				"static"
+			],
+			[
+				"merge",
+				"merge_sort\tmerge_sort"
+			],
+			[
+				"bi",
+				"binary_search\tbinary_search"
+			],
+			[
+				"uppe",
+				"upper_bound"
+			],
+			[
+				"bs",
+				"bs_upper"
+			],
+			[
+				"e",
+				"eloop"
+			],
+			[
+				"R",
+				"R"
+			],
+			[
+				"b",
+				"binary_search"
+			],
+			[
+				"li",
+				"link\tTag"
+			],
+			[
+				"ti",
+				"title\tTag"
+			],
+			[
+				"sho",
+				"show"
+			],
+			[
+				"r",
+				"rect"
+			],
+			[
+				"B",
+				"Bullet2"
+			],
+			[
+				"alin",
+				"aliens"
+			],
+			[
+				"ain",
+				"aliens"
+			],
+			[
+				"S",
+				"Surface"
+			],
+			[
+				"d",
+				"draw"
+			],
+			[
+				"write",
+				"writerow"
+			],
+			[
+				"N",
+				"NOT"
+			],
+			[
+				"A",
+				"Average"
+			],
+			[
+				"class",
+				"class_"
+			],
+			[
+				"mov",
+				"movie_containers"
+			],
+			[
+				"ans",
+				"answer"
+			],
+			[
+				"sa",
+				"sadness"
+			],
+			[
+				"mn",
+				"mn"
+			],
+			[
+				"h",
+				"heap"
+			],
+			[
+				"fl",
+				"float"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 94.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"termi",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"ter",
+				"Preferences: Terminal View: Keybindings"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Changelog"
+			],
+			[
+				"prefe",
+				"Preferences: Browse Packages"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"yrt",
+				"Set Syntax: reStructuredText"
+			],
+			[
+				"terr",
+				"Preferences: Terminal View: Readme"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pre",
+				"Preferences: Settings"
+			],
+			[
+				"Snippet: ",
+				"Snippet: cpp"
+			]
+		],
+		"width": 497.0
+	},
+	"console":
+	{
+		"height": 151.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/nishant/nishu/arduino/sender",
+		"/home/nishant/nishu/arduino/input",
+		"/home/nishant/nishu/arduino/software_serial",
+		"/home/nishant/nishu/code.cpp",
+		"/home/nishant/nishu/arduino/timer",
+		"/home/nishant/nishu/2d_malloc.c",
+		"/home/nishant/nishu/cpro/test.c",
+		"/home/nishant/.config/sublime-text-3/Packages/User/upper_bound.sublime-snippet",
+		"/home/nishant/.config/sublime-text-3/Packages/User/lower_bound.sublime-snippet",
+		"/home/nishant/.config/sublime-text-3/Packages/User/product.sublime-snippet",
+		"/home/nishant/nishu/cpro/code_notes/sorting.c",
+		"/home/nishant/nishu/cpro/code_notes/link_list.c",
+		"/home/nishant/nishu/cpro/code_notes/sorting,c",
+		"/home/nishant/nishu/cpro/code_notes/a.out",
+		"/home/nishant/nishu/cpro/code_notes/calling.cpp",
+		"/home/nishant/nishu/cpro/code_notes/check.c",
+		"/home/nishant/nishu/cpro/code_notes/check.cpp",
+		"/home/nishant/nishu/cpro/code_notes/class2.cpp",
+		"/home/nishant/nishu/cpro/code_notes/class.cpp",
+		"/home/nishant/nishu/cpro/code_notes/code.c",
+		"/home/nishant/nishu/cpro/code_notes/constructor.cpp",
+		"/home/nishant/nishu/cpro/code_notes/dy_mem.cpp",
+		"/home/nishant/nishu/cpro/code_notes/extern.cpp",
+		"/home/nishant/nishu/cpro/code_notes/float.c",
+		"/home/nishant/nishu/cpro/code_notes/iterate.cpp",
+		"/home/nishant/nishu/cpro/code_notes/linklist.c",
+		"/home/nishant/nishu/cpro/code_notes/malloc.c",
+		"/home/nishant/nishu/cpro/code_notes/namespace.cpp",
+		"/home/nishant/nishu/cpro/code_notes/overload.cpp",
+		"/home/nishant/nishu/cpro/code_notes/pointer.cpp",
+		"/home/nishant/nishu/cpro/code_notes/questions.txt",
+		"/home/nishant/nishu/cpro/code_notes/reference.cpp",
+		"/home/nishant/nishu/cpro/code_notes/static.cpp",
+		"/home/nishant/nishu/cpro/code_notes/struct.c",
+		"/home/nishant/nishu/cpro/code_notes/temp.cpp",
+		"/home/nishant/nishu/cpro/code_notes/text.txt",
+		"/home/nishant/nishu/cpro/code_notes/typedef.cpp",
+		"/home/nishant/nishu/test.cpp",
+		"/home/nishant/nishu/cpro/test.cpp",
+		"/home/nishant/.config/sublime-text-3/Packages/User/prime_check_list.sublime-snippet",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/bored_tourist.c",
+		"/home/nishant/nishu/cpro/code_notes/findlength.c",
+		"/home/nishant/nishu/test.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/dreams.c",
+		"/home/nishant/nishu/diary/9_nov_again",
+		"/home/nishant/nishu/diary/9_nov_2018",
+		"/home/nishant/.config/sublime-text-3/Packages/User/cpp.sublime-snippet",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/election.c",
+		"/home/nishant/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/nishant/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/nishant/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/nishant/nishu/merge.c",
+		"/home/nishant/Downloads/election2.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/merge2.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/election",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/gon.c",
+		"/home/nishant/.config/sublime-text-3/Packages/User/c.sublime-snippet",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/goblet.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/go",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/distri.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/hide_ans_seek.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/sieve.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/prom.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/ear.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/elections.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/elec.cpp",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass3/elec.cp",
+		"/home/nishant/nishu/my diary/29_oct_2018",
+		"/home/nishant/vpn.txt",
+		"/home/nishant/test.cpp",
+		"/home/nishant/.config/sublime-text-3/Packages/User/gcd.sublime-snippet",
+		"/home/nishant/nishu/code.c",
+		"/home/nishant/Downloads/tourist2.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/attendance.c",
+		"/home/nishant/Downloads/att2_parth.c",
+		"/home/nishant/Downloads/attendance.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/farmer.c",
+		"/home/nishant/nishu/cpro/code_notes/register.cpp",
+		"/home/nishant/nishu/cpro/cp/merge_sort",
+		"/home/nishant/nishu/cpro/cp/test.c",
+		"/home/nishant/nishu/cpro/cp/test.cpp",
+		"/home/nishant/.config/sublime-text-3/Packages/User/merge_sort.sublime-snippet",
+		"/home/nishant/.config/sublime-text-3/Packages/TerminalView/README.md",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/test.cpp",
+		"/home/nishant/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings",
+		"/home/nishant/.config/Code/Preferences",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/fa",
+		"/home/nishant/nishu/cpro/cp/binary_search",
+		"/home/nishant/.config/sublime-text-3/Packages/User/binary_search.sublime-snippet",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/farmer_crisis.c",
+		"/home/nishant/nishu/untitled.cpp",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/binary_search.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/tourist.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/free_attendance.c",
+		"/home/nishant/nishu/my diary/10 oct 2018",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/kirito1.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/kirito.c",
+		"/home/nishant/nishu/cpro/cpro_ass_ug2k18/ass2/Q1.pdf",
+		"/home/nishant/nishu/cpro/lab_1_oct_2018/4.c",
+		"/home/nishant/nishu/cpro/lab_1_oct_2018/41.c",
+		"/home/nishant/vimskels/templates1.cpp",
+		"/home/nishant/Desktop/chut.c",
+		"/home/nishant/Desktop/nishu/code.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/2.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/template_cpp",
+		"/home/nishant/Desktop/nishu/template_folder/template",
+		"/home/nishant/Desktop/nishu/template_folder/quicksort",
+		"/home/nishant/Desktop/nishu/template_folder/merge_sort",
+		"/home/nishant/Desktop/nishu/template_folder/binary_search",
+		"/home/nishant/Desktop/nishu/template_folder/6.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/5.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/4.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/3.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/1.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/1.c",
+		"/home/nishant/Desktop/nishu/template_folder/q6.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/q5.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/q4.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/q3.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/q2.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/q1.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/code.cpp",
+		"/home/nishant/Desktop/nishu/template_folder/test.cpp",
+		"/home/nishant/Desktop/nishu/web_dev/pg2.html",
+		"/home/nishant/Desktop/nishu/web_dev/pg1.html",
+		"/home/nishant/Desktop/nishu/test.html",
+		"/home/nishant/Desktop/nishu/web_dev/pg1.css",
+		"/home/nishant/nishu/web_dev/test.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "a.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ter",
+				"iterate.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

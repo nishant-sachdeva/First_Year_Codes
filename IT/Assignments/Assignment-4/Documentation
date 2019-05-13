@@ -1,0 +1,37 @@
+Under is the requisite documentation for the said project:
+
+
+START - 10th April:
+	-> Flask study and understanding of the scope of the requirements
+	-> Started to build the web app
+	-> Looked up the repos and the websites for the NLP experiment that we have been assigned and a test experiment from the computer organisation lab to understand the requirements of the new design
+	-> Build the layout html file for the experiment design.
+
+11 - 13 th April:
+	-> Used the {% extend %} command from flask to extend the layout to all the requisite html files from the experiment page
+	-> Built the actual specific content from specific pages of the experiment such as the introduction, theory, procedure, further readings.
+	-> Fixed all the broken links with the Vleads page for content not found.
+
+14th April:
+	-> Images were not visible despite the links looking correct.
+	-> Recorrected the path under a static folder to make the images work.
+
+15th -16th April:
+	-> Study of the working of the experiment and the quiz page.
+	-> The experiment page has been given a front end using flask and the back end part used javaScript to check the user answers.
+	-> The quiz front end interface has mostly been ported as it is into flask. However, appropriate fields have been cleverly
+		added to allow the user to enter, submit and store the answers.
+	-> The quiz backend is more involved. It uses a combination of flask, python, sqlalchemy to create a database table for all the answers.
+		So, the user, after entering all the answers, clicks on  submit, the "quizzes/submit" action is invoked. It adds a new row to the
+		table and stores the answers along with an id for that answer. If any of the fields has been left unanswered, there are appropriate
+		default values in place to fill up that spot in the table.
+
+18th April:
+	-> Updated the documentation file and wrapped up the project.
+	-> Fixed Indentation and javascript.
+
+19th April:
+	-> Fixed some minor last minute bugs.
+	-> Implemented a unit testing mechanism to check if all the pages are loading as per expectations.
+	-> Finalised the README , Documentation files.
+	

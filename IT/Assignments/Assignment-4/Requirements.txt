@@ -1,0 +1,25 @@
+We have the following requirements:
+1.	We want to implement a database using sql and the like.
+2.	We will use OOPS concepts and good programming practices for the implementation.
+3.	We will package our html pages into a layout doc and import the same into our other pages.
+4.	We seek to maintain good documentation throughout our development stages.
+
+DESCRIPTION OF THE EXPERIMENT:
+	The objective of this experiment is to learn how to apply add-one smoothing on sparse bigram table. 
+
+	The standard N-gram models are trained from some corpus. The finiteness of the training corpus leads to the absence of some perfectly acceptable N-grams. This results in sparse bigram matrices. This method tends to underestimate the probability of strings that do not occur in their training corpus.
+
+TOOLS TO BE USED:
+
+The experiment seeks to use the following tools:
+1. FLASK: The whole experiment will be deployed using the flask library in python. The idea is to take the basic template from the home vlabs repo and make the requisite changes( R&D teams confirm that the repo has a lot of bugs )and then use that as layout file for the web pages used in the experiment. The other files will import the same for their specific use and then add further special elements on top of it as per the needs and tasks of that particular page.
+
+2. PYTHON: The flask app will be called using Python3 with the debugger mode set as ACTIVE to assist in any live changes. The backend for the simulations and the quiz will be written using respective python libraries. 
+
+3. SQL: Either sql itself or some variant of it will be used in the making of the quiz ( the exact variant used will be disclosed in good time well before the app is deployed, so dw :) ). The basic use tho will be in storing of the questions, the options assosciated with them and their respective answers.
+
+FUTURE PROSPECTS:
+	Depending on the time available and the decision taken by the group, we might choose to include some features such as maintaining a user login where past results and averages can be stored. We could also have accounts with admn privileges where the admn can add or delete questions, change the correct answers depending on user feedback and discussion with an expert committee. We can also (as written above) have a feedback form where users can report bugs, wrong answers, request for new features etc.
+
+
+ANY NEW FEEDBACK, SUGGESTIONS, CONSTRUCTIVE FEEDBACK IS WELCOME

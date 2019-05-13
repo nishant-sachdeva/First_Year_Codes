@@ -1,0 +1,26 @@
+<!--DOCTYPE html-->
+<html>
+
+  <head>
+    <title>Playing with DOM</title>
+
+  <meta charset="UTF-8">
+  </head>
+
+
+  <body>
+    <h1>Here's a button</h1>
+    <button id="changeBackground">Click me!</button>
+    <p id="demo"></p>
+
+
+    <script type="text/javascript">
+    	var button = document.getElementById('changeBackground');
+    	button.addEventListener('click', () => {
+  		  document.getElementById("demo").innerHTML = Date();
+		});
+
+    </script>
+  </body>
+
+</html>

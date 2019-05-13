@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nishant Sachdeva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="https://www.freeiconspng.com/uploads/letter-n-icon-png-24.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/loader.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/menu.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/table.js"></script>
+</head>
+<body onload="myFunction()" class="body">
+   <!-- THE loader starts here--> 
+   <div id="container">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+    </div>
+    <!--this part is the loader that starts the page-->    
+    
+    
+    <div id="myDiv" class="animate-bottom">
+        <div id="navbar">
+            <a href="#about">ABOUT ME</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#feedback">FEEDBACK</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <br>
+
+        <div id="about">
+            <h1>ABOUT ME :) 
+            <br> <br> <br>
+            <div class="video-container">
+                <iframe id="video" src="https://www.youtube.com/embed/lxC9U1CT40g" allowfullscreen></iframe>
+            </div>    
+            </h1>
+        </div>
+        <hr>
+        <div id="gallery">
+            <h1>GALLERY
+                <br>
+                <div class="w3-container">
+                    <img id="rotate" src="../images/dinner.jpeg" class="w3-circle" alt="Rotating Images" onclick="circulate(this)">
+                </div>                  
+            </h1>
+        </div>
+        <hr>
+        <div id="feedback">
+            <h1>FEEDBACK
+                <br>
+            </h1>
+                <form>
+                    <input type="text" id="name" placeholder="Name">
+                    <input type="text" id="skill" placeholder="Skill">
+                    <input type="text" id="level" placeholder="Proficiency Level">
+                    <br>
+                    <input type="button" class="add-row" value="Submit">
+                </form>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>first Name</th>
+                            <th>last name</th>
+                            <th>Skill</th>
+                            <th>Proficiency Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+        </div>   
+        <hr>
+
+        <div id="contact">
+            <h1>CONTACT
+            <br>
+                Thanks for going through the website;
+                <br>
+                For further contact, plis use the following links :)
+                <br> <br>
+                                <!--   <div class="col-md-12 col-sm-12">
+                                     -->
+                              <a href="https://www.facebook.com/nishant.sachdeva.142" target="__blank" class="fa fa-facebook"></a>
+                              <a href="https://twitter.com/Nishu9877397824" target="__blank" class="fa fa-twitter"></a>
+                              <a href="https://plus.google.com/u/0/113854868155957468354" target="__blank" class="fa fa-google-plus"></a>
+                              <a href="https://www.linkedin.com/in/nishant-sachdeva-46ab5311b" target="__blank" class="fa fa-linkedin"></a>
+               <!-- </div> -->
+
+            </h1>
+            <a class="borderlinks"  dowload href="../CV.pdf" target="__blank">DOWNLOAD CV</a>
+            <br>
+            <a class="borderlinks" href="mailto:nishant.sachdeva@research.iiit.ac.in">Mail me</a>
+            <p><button onclick="clickCounter()" type="button">Like Page</button></p>
+            <p id="result"></p>
+            <p><button onclick="clickDownCounter()" type="button">Dislike Page</button></p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>MUSee</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+   
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/vendor.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/logi.css">
+    
+    <!-- script
+    ================================================== -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/modernizr.js"></script>
+    <script src="/static/js/pace.min.js"></script>
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/sfavicon.ico" type="image/x-icon">
+  
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <section class="s-pageheader s-pageheader--home">
+
+        <header class="header">
+            <div class="header__content row">
+
+                <div class="header__logo">
+                    <a class="logo" href="/" >
+                        <img src="/static/images/logo.png" alt="Homepage">
+                    </a>
+                </div> <!-- end header__logo -->
+
+                
+
+                <a class="header__search-trigger" href="#0"></a>
+
+                <div class="header__search">
+
+                    <form role="search" method="get" class="header__search-form" action="/search">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+        
+                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+                </div>  <!-- end header__search -->
+
+
+                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li class="current"><a href="/" title="">Home</a></li>
+                        {% if username %}
+                        <li class="has-children">
+                            <a href="#0" title="">Playlists</a>
+                            <ul class="sub-menu">
+                            {% for row in prow %}
+                            <li><a href="/playlist/{{row[0]}}">{{row[0]}}</a></li>
+                            {% endfor %}
+                            </ul>
+                        </li>
+                        {% endif %}
+                        {% if alusr %}
+                        <li class="has-children">
+                            <a href="#0" title="">Users</a>
+                            <ul class="sub-menu">
+                             {% for row in alusr %}
+                             {% if row[0]!=username %}
+                            <li>
+                                <a href="/user/{{row[0]}}">{{row[0]}}</a>
+                            </li>
+                             {% endif %}
+                              {% endfor %}
+                            </ul>
+                            
+                        </li>
+                        {% endif %}
+
+                        <li><a href="/contact" title="">Contact</a></li>
+
+                                    
+                                    <nav class="main-nav">
+                                        <ul>
+                                            <!-- inser more links here -->
+                                            {% if not logged_in %}
+                                            <li>
+                                                <a class="cd-signin" href="#0">Sign in</a>
+                                            </li>
+                                            <li>
+                                                <a class="cd-signup" href="#0">Sign up</a>
+                                            </li>
+                                            {% else %}
+                                            <li>
+                                                <a href="/logout">Logout</a>
+                                            </li>
+                                            {% endif %}
+                                        </ul>
+                                    </nav>
+                                    
+                    </ul> <!-- end header__nav -->
+
+                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+        {% if not srch %}
+        <div class="pageheader-content row">
+            <div class="col-full">
+
+                <div class="featured">
+
+                    <div class="featured__column featured__column--big">
+                        <div class="entry" style="background-image:url('/static/images/thumbs/featured/featured-guitarman.jpg');">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category/"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">What Your Music Preference Says About You and Your Personality.</a></h1>
+
+                                <div class="entry__info">
+                                    <a href="#0" class="entry__profile-pic">
+                                        <img class="avatar" src="/static/images/avatars/user-03.jpg" alt="">
+                                    </a>
+
+                                    <ul class="entry__meta">
+                                        <li><a href="#0">{% if username %}{{username}} {% else %} Anonymous {% endif %}</a></li>
+                                        <li id="datex"><script>n = new Date();
+                                            var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                                             document.write(n.toLocaleDateString("en-Us",options));</script></li>
+                                    </ul>
+                                </div>
+                            </div> <!-- end entry__content -->
+                            
+                        </div> <!-- end entry -->
+                    </div> <!-- end featured__big -->
+                    
+                    <div class="featured__column featured__column--small">
+
+                        <div class="entry" style="background-image:url('/static/images/thumbs/featured/featured-watch.jpg');">
+                            
+                            <div class="entry__content">
+                                <span class="entry__category/"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">If music be the food of love, play on.</a></h1>
+
+                                <div class="entry__info">
+                                    <a href="#0" class="entry__profile-pic">
+                                        <img class="avatar" src="/static/images/avatars/user-03.jpg" alt="">
+                                    </a>
+
+                                 
+                                </div>
+                            </div> <!-- end entry__content -->
+                          
+                        </div> <!-- end entry -->
+
+                        <div class="entry" style="background-image:url('/static/images/thumbs/featured/featured-beetle.jpg');">
+
+                            <div class="entry__content">
+                                <span class="entry__category/"><a href="#0">Music</a></span>
+
+                                <h1><a href="#0" title="">One good thing about music, when it hits you, you feel no pain.</a></h1>
+
+                                <div class="entry__info">
+                                    <a href="#0" class="entry__profile-pic">
+                                        <img class="avatar" src="/static/images/avatars/user-03.jpg" alt="">
+                                    </a>
+
+                                  
+                                </div>
+                            </div> <!-- end entry__content -->
+
+                        </div> <!-- end entry -->
+
+                    </div> <!-- end featured__small -->
+                </div> <!-- end featured -->
+
+            </div> <!-- end col-full -->
+        </div> <!-- end pageheader-content row -->
+     {% endif %}
+    </section> <!-- end s-pageheader -->
+<script src='/static/js/jquery.leanModal.min.js'></script>
+
+    <!-- s-content
+    ================================================== -->
+   
+    <section class="s-content">
+        {% if srch %}
+        <h1 align="center"> Search Results </h1><br>
+        {% endif %}
+        {% if (not rows) and (srch) %}
+        <h4 align="center"> No Results Found</h4>
+        <br>
+        {% endif %}
+        <div class="row masonry-wrap">
+            <div class="masonry">
+               
+                <div class="grid-sizer"></div>
+                 
+                 {% for row in rows %}
+                <article class="masonry__brick entry format-audio" data-aos="fade-up">
+                     {{row[1]}} , {{row[2]}} , {{row[3]}}
+                    <div class="entry__thumb">
+                        <nav class="xxxx">
+                            <li>
+                         {% if username %}<a class="entry__thumb-link cd-cplay-pl" href="/addPlay/{{row[1]}}"> {% else %} <a class="entry__thumb-link cd-cplay-pl" href=""> {% endif %}
+                        
+                        
+                              
+                              
+                            <img src="/static/simages/{{row[5]}}_400.jpg" srcset="/static/simages/{{row[5]}}_400.jpg 1x, /static/simages/{{row[5]}}_800.jpg 2x"
+                                alt="">
+                        </a>
+                        </li>
+                        </nav>
+                        <div class="audio-wrap">
+                            <audio id="player" src="/static/audio/{{row[4]}}" width="100%" height="42" controls="controls"></audio>
+                        </div>
+                    </div>
+                    </article>
+                {% if (loop.index==1 or loop.index==2) and (not srch) %}
+                <article class="masonry__brick entry format-quote" data-aos="fade-up">
+                
+                    
+                        <div class="entry__thumb">
+                            <blockquote>
+                                <p>{% if loop.index==1 %} Good music is making something intelligible and memorable. Great music is making something memorable and meaningful.
+                                     {% elif loop.index==2 %}
+                                       Music is lyf ;-D
+                                       {% endif %}
+                                </p>
+                            </blockquote>
+                        </div>
+                    
+                    </article>
+                </article>
+                 {% endif %}
+                
+           
+              
+                <!-- end article -->
+            {% endfor %}
+            </div> <!-- end masonry -->
+        </div> <!-- end masonry-wrap -->
+
+
+    </section> <!-- s-content -->
+
+
+    <!-- s-extra-->
+    <!-- cd-user-modal -->
+    <!-- s-footer
+    ================================================== -->
+
+    <div class="cd-user-modal">
+        <!-- this is the entire modal form, including the background -->
+        <div class="cd-user-modal-container">
+            <!-- this is the container wrapper -->
+            <ul class="cd-switcher">
+                <li>
+                    <a href="#0">Sign in</a>
+                </li>
+                <li>
+                    <a href="#0">New account</a>
+                </li>
+            </ul>
+    
+            <div id="cd-login">
+                <!-- log in form -->
+                <form class="cd-form" id="cdloo" action='/login' method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signin-email"  name="email" type="email" placeholder="E-mail">
+                       
+                    </p>
+    
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signin-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signin-password"  name="password" type="password" placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                       
+                    </p>
+    
+                    
+    
+                    <p class="fieldset">
+                        <!--input class="full-width" type="submit" value="Login"-->
+                        <a  class="btn btn--stroke full-width" value="Login" onclick="document.getElementById('cdloo').submit();">Login</a>
+                    </p>
+                </form>
+    
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+            <!-- cd-login -->
+    
+            <div id="cd-signup">
+                <!-- sign up form -->
+                <form class="cd-form" id="xyz" action='/register' method="post">
+                    <p class="fieldset">
+                        <label class="image-replace cd-username" for="signup-username">Username</label>
+                        <input class="full-width has-padding has-border" id="signup-username" name="username" type="text" placeholder="Username">
+                       
+                    </p>
+    
+                    <p class="fieldset">
+                        <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                        <input class="full-width has-padding has-border" id="signup-email" name="email" type="email" placeholder="E-mail">
+                       
+                    </p>
+    
+                    <p class="fieldset">
+                        <label class="image-replace cd-password" for="signup-password">Password</label>
+                        <input class="full-width has-padding has-border" id="signup-password" name="password" type="password" placeholder="Password">
+                        <a href="#0" class="hide-password">Show</a>
+                       
+                    </p>
+    
+                   
+    
+                    <p class="fieldset">
+                        <!--input class="full-width has-padding" type="submit" value="Create account"-->
+                        <a class="btn btn--stroke full-width" value="Create account" onclick="document.getElementById('xyz').submit();">Create Account</a>
+                    </p>
+                </form>
+    
+                <!-- <a href="#0" class="cd-close-form">Close</a> -->
+            </div>
+            <!-- cd-signup -->
+    
+            
+            <!-- cd-reset-password -->
+            <a href="#0" class="cd-close-form">Close</a>
+        </div>
+        <!-- cd-user-modal-container -->
+    </div> 
+    <!-- cd-user-modal -->
+
+
+
+
+    </body>
+
+    
+    
+    
+    <script src="/static/js/logi.js"></script>
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

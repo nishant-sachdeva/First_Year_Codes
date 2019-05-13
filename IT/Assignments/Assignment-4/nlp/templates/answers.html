@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div id='answer'>
+    <p style="text-align:center;">
+         <!-- Title -->
+        <h1>Bigram probability Table after add-one: </h1>
+    </p>
+    <br><br>
+    <!-- table -->
+    <table cellspacing="-2" cellpadding="4" border="1" style="text-align:center;">
+         <tr>
+              <th></th>
+              <th>(eos)</th>
+              <th>I</th>
+              <th>you</th>
+              <th>him</th>
+              <th>can</th>
+              <th>near</th>
+              <th>sit</th>
+         </tr>
+         <tr>
+              <th>(eos)</th>
+              <td id="td0">0.0002</td>
+              <td id="td1">0.0527</td>
+              <td id="td2">0.0527</td>
+              <td id="td3">0.0002</td>
+              <td id="td4">0.0527</td>
+              <td id="td5">0.0002</td>
+              <td id="td6">0.0527</td>
+          </tr>
+          <tr>
+               <th>I</th>
+               <td id="td7">0.0002</td>
+               <td id="td8">0.0002</td>
+               <td id="td9">0.0002</td>
+               <td id="td10">0.0002</td>
+               <td id="td11">0.0527</td>
+               <td id="td12">0.0002</td>
+               <td id="td13">0.0527</td>
+          </tr>
+          <tr>
+               <th>you</th>
+               <td id="td14">0.1053</td>
+               <td id="td15">0.0002</td>
+               <td id="td16">0.0002</td>
+               <td id="td17">0.0002</td>
+               <td id="td18">0.0527</td>
+               <td id="td19">0.0002</td>
+               <td id="td20">0.0002</td>
+          </tr>
+          <tr>
+               <th>him</th>
+               <td id="td21">0.0527</td>
+               <td id="td22">0.0002</td>
+               <td id="td23">0.0002</td>
+               <td id="td24">0.0002</td>
+               <td id="td25">0.0002</td>
+               <td id="td26">0.0002</td>
+               <td id="td27">0.0002</td>
+          </tr>
+          <tr>
+               <th>can</th>
+               <td id="td28">0.0002</td>
+               <td id="td29">0.0527</td>
+               <td id="td30">0.0002</td>
+               <td id="td31">0.0002</td>
+               <td id="td32">0.0002</td>
+               <td id="td33">0.0002</td>
+               <td id="td34">0.1053</td>
+          </tr>
+          <tr>
+               <th>near</th>
+               <td id="td35">0.0002</td>
+               <td id="td36">0.0002</td>
+               <td id="td37">0.0527</td>
+               <td id="td38">0.0527</td>
+               <td id="td39">0.0002</td>
+               <td id="td40">0.0002</td>
+               <td id="td41">0.0002</td>
+          </tr>
+          <tr>
+               <th>sit</th>
+               <td id="td42">0.0527</td>
+               <td id="td43">0.0002</td>
+               <td id="td44">0.0527</td>
+               <td id="td45">0.0002</td>
+               <td id="td46">0.0002</td>
+               <td id="td47">0.1053</td>
+               <td id="td48">0.0002</td>
+          </tr>
+     </table>
+</div>
+
+{% endblock %}

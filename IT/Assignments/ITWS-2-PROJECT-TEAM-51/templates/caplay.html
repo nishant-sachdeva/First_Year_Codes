@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>Add/Create Playlist</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/vendor.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+
+    <style type="text/css" media="screen">
+        .s-styles { 
+            background: #f2f2f2;
+            padding-top: 12rem;
+            padding-bottom: 12rem;
+        }
+
+        .s-styles .section-intro h1 {
+            margin-top: 0;
+        }
+     </style> 
+
+    <!-- script
+    ================================================== -->
+    <script src="/static/js/modernizr.js"></script>
+    <script src="/static/js/pacezmin.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+    <!-- pageheader
+    ================================================== -->
+    <div class="s-pageheader">
+
+        <header class="header">
+            <div class="header__content row">
+
+                <div class="header__logo">
+                    <a class="logo" href="/">
+                        <img src="/static/images/logo.png" alt="Homepage">
+                    </a>
+                </div> <!-- end header__logo -->
+
+               
+                <a class="header__search-trigger" href="#0"></a>
+
+                <div class="header__search">
+
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="search-submit" value="Search">
+                    </form>
+        
+                    <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
+
+                </div>  <!-- end header__search -->
+
+
+                <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
+
+                <nav class="header__nav-wrap">
+
+                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+
+                    <ul class="header__nav">
+                        <li><a href="/" title="">Home</a></li>
+                       
+                        <li><a href="/contact" title="">Contact</a></li>
+                    </ul> <!-- end header__nav -->
+
+                    <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
+
+                </nav> <!-- end header__nav-wrap -->
+
+            </div> <!-- header-content -->
+        </header> <!-- header -->
+
+    </div> <!-- end s-pageheader -->
+
+
+    <!-- styles
+    ================================================== -->
+    <section id="styles" class="s-styles">
+    
+        <div class="row">
+
+            <div class="col-six tab-full">
+
+                <h3 class="add-bottom">Add to Playlist</h3>
+
+                <form action="/adplay" method="post">
+                    
+                    <div>
+                        <label for="sampleRecipientInput">Playlists:</label>
+                        <div class="cl-custom-select">
+                            <select class="full-width" id="sampleRecipientInput" name="pname">
+                                {% if rows %}
+                                {% for row in rows %}
+                                <option value="{{row[0]}}">{{row[0]}}</option>
+                                {% endfor %}
+                                {% endif %}
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <input class="btn--primary full-width" type="submit" value="Add" name="addd">
+                    <input type="hidden" value="{{vaall}}" name="sname">
+                </form>
+
+            </div>
+            <div class="col-six tab-full">
+            
+                <h3 class="add-bottom">Create New Playlist</h3>
+            
+                <form action="/crplay" method="post" >
+                    <div>
+                        <label for="sampleInput">Name</label>
+                        <input class="full-width" type="text" placeholder="Name" id="sampleInput" name="pname">
+                    </div>
+                    <div>
+                        <label for="sampleRecipientInput">Type</label>
+                        <div class="cl-custom-select">
+                            <select class="full-width" id="sampleRecipientInput" name="pp">
+                                <option value="Public">Public</option>
+                                <option value="Private">Private</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <input class="btn--primary full-width" type="submit" value="Create">
+                    <input type="hidden" value="{{vaall}}" name="sname" >
+                </form>
+            
+            </div>
+
+         
+
+        </div> <!-- end row -->
+
+    </section> <!-- end styles -->
+
+
+    <!-- s-extra
+    ================================================== -->
+   
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/plugins.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

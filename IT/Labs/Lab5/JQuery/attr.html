@@ -1,0 +1,27 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Get an Element's Attribute Value</title>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    
+<script type="text/javascript">
+$(document).ready(function()
+{
+    $(".btn-one").click(function()
+    {
+        var str = $("a").attr("href");
+        alert(str);
+    });
+    
+});
+</script>
+</head>
+    
+<body>
+    <button type="button" class="btn-one">Get Link's HREF Attribute</button>
+   
+    <p><a href="https://www.wikipedia.org/">Wikipedia</a></p>
+    
+</body>
+</html>

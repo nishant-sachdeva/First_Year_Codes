@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- Title -->
+<h1 class="text-h2-lightblue">Experiment</h1>
+<div align="center" class="content" id="experiment-article-section-3-content">
+	<p> CORPUS A</p>
+	<p style="font-size:130%" >Bigram counts for the corpus:</p>
+	<br>
+	<!-- Table -->
+	<div style="overflow-x:auto;">
+	<table cellspacing="2" cellpadding="8" border="1" style="text-align:center;">
+		<!-- Creating table using flask and python -->
+		<tbody>
+			<tr>
+				<th></th>
+				{% for i in range(0,7) %}
+				<th>&nbsp; {{ array[0][i] }} &nbsp; </th>
+				{% endfor %}
+			</tr>
+			{% for i in range(0,7) %}
+			<tr>
+				<th>&nbsp; {{ array[0][i] }} &nbsp; </th>
+				{% for j in range(0,7) %}
+				<td>
+					{{ array[i+1][j] }}
+				</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	<br><br><br>
+	<p>N = 5700 V = 7</p>
+	<br>
+	<p>Fill the biagram probabilities after add-one smoothing: (Upto 4 decimal places)</p>
+	<br><br><br>
+
+	<table cellspacing="2" cellpadding="8" border="1" style="text-align:center;">
+		<tbody>
+			<!-- Assigning ID's using flask and python -->
+			<tr>
+				<th></th>
+				{% for i in range(0,7) %}
+				<th> &nbsp; {{ array[0][i] }} &nbsp; </th>
+				{% endfor %}
+			</tr>
+			{% for i in range(0,7) %}
+			<tr>
+				<th>&nbsp; {{ array[0][i] }} &nbsp;</th>
+				{% for j in range(0,7) %}
+				<td id="td{{ i*7+j }}">
+					<input type="text" size="3" value="0" id="{{ i*7+j }}">
+				</td>
+				{% endfor %}
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	</div>
+	<br><br><br>
+	<div id="result"></div>
+	<div id="right_ans"></div>
+	<button onclick="checkCondition('0.0002,0.0527,0.0527,0.0002,0.0527,0.0002,0.0527,0.0002,0.0002,0.0002,0.0002,0.0527,0.0002,0.0527,0.1053,0.0002,0.0002,0.0002,0.0527,0.0002,0.0002,0.0527,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0002,0.0527,0.0002,0.0002,0.0002,0.0002,0.1053,0.0002,0.0002,0.0527,0.0527,0.0002,0.0002,0.0002,0.0527,0.0002,0.0527,0.0002,0.0002,0.1053,0.0002')">SUBMIT</button>
+	<br><br>
+	<a href="{{ url_for('see_answers') }}" target="__blank">SEE ANSWERS</a>
+</div>
+{% endblock %}
